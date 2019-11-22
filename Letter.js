@@ -6,7 +6,7 @@ var letter = function(character){
             return  this.character;
         }
         else{
-            return "_"
+            return " _ "
         }
     }
     this.guess = function(char){
@@ -14,10 +14,6 @@ var letter = function(character){
             this.guessed = true;
         }
     }
-}
+};
 
-var newLetter = new letter("l");
-// newLetter.guess("l");
-console.log(newLetter.display());
-
-// module.exports = letter;
+module.exports = letter;
